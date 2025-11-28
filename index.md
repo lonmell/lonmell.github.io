@@ -1,14 +1,14 @@
 ---
 layout: default
-title: 안드로이드 개발자 ○○○ 포트폴리오
+title: 안드로이드 개발자 방창배 포트폴리오
 ---
 
-# 안드로이드 개발자 ○○○
+# 안드로이드 개발자 방창배
 
 시각장애인 보조기기·모바일 서비스와 공공 R&D 과제를 중심으로  
 약 7년간 안드로이드 앱을 개발해 온 개발자입니다.
 
-- 이메일: your-email@example.com  
+- 이메일: lonmell0213@gmail.com  
 - GitHub: [YOUR_GITHUB_ID](https://github.com/YOUR_GITHUB_ID)
 
 ---
