@@ -25,8 +25,8 @@ title: 안드로이드 개발자 방창배 포트폴리오
       이 중 최근 3년은 시각장애인 보조기기·모바일 서비스와 공공 R&amp;D 과제에 집중하고 있습니다.
     </p>
     <p style="margin:0; font-size:0.95rem;">
-      <strong>이   름</strong>:방창배
-      <strong>생년월일</strong>:1991.10.27
+      <strong>이   름</strong>:방창배<br>
+      <strong>생년월일</strong>:1991.10.27<br>
       <strong>이 메 일</strong>:
       <a href="mailto:lonmell0213@gmail.com">lonmell0213@gmail.com</a><br>
       <strong>GitHub</strong>:
