@@ -9,7 +9,7 @@ title: 안드로이드 개발자 방창배 포트폴리오
 약 7년간 안드로이드 앱을 개발해 온 개발자입니다.
 
 - 이메일: lonmell0213@gmail.com  
-- GitHub: [YOUR_GITHUB_ID](https://github.com/YOUR_GITHUB_ID)
+- GitHub: [방창배 깃 허브로 이동]([https://github.com/YOUR_GITHUB_ID](https://github.com/lonmell))
 
 ---
 
