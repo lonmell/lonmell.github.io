@@ -131,9 +131,9 @@ title: 안드로이드 개발자 방창배 포트폴리오
 - 2024 **디지털인프라(SW) 종합 진단 및 개선 사업(TTA/NIPA)** 대상 서비스  
 - SW품질·소스코드·DBMS·구축체계 진단 대응 및 개선 사항 반영
 - 시각장애인 보조기기 **하티오아이 PH** 조달 등록 및 KC·SAR 인증 과정 기술 지원
-- 인천공항 신기술 테스트베드 공모전 선정, **CES 2025 HATIO EYE 출품** 등 박람회·전시 기술 지원 [유튜브 이동](https://youtu.be/JWexY0MNggE?si=8fLCk-vQnwx_RJUL)
+- 인천공항 신기술 테스트베드 공모전 선정, **CES 2025 HATIO EYE 출품** 등 박람회·전시 기술 지원 [인천공항 길안내 하티오아이 소개 "승우버디님"](https://youtu.be/JWexY0MNggE?si=8fLCk-vQnwx_RJUL)
 - 2024 Reha Home 홈케어·재활·복지전시회 참여 영상 [유튜브 이동](https://www.youtube.com/watch?v=86Rvdg7s8Kc)
-- 발표·영상링크 [유튜브 이동](https://youtu.be/RvpdKi8TPu4?si=qgLoRuyf_HUR7gGO) / [유튜브 이동](youtube.com/watch?v=h5G9FrHZ0Tc&si=_b1La8t1Rl9VwRlD)
+- 발표·영상링크 [KBS News 현장영상](https://youtu.be/RvpdKi8TPu4?si=qgLoRuyf_HUR7gGO) / [2024 국정감사 신기술 보조기기](youtube.com/watch?v=h5G9FrHZ0Tc&si=_b1La8t1Rl9VwRlD)
 
 ---
 
