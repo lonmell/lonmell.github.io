@@ -2,179 +2,190 @@
 layout: default
 title: 안드로이드 개발자 방창배 포트폴리오
 ---
-<div style="margin-bottom:24px;">
-  <div
-    style="
-      padding:16px 20px;
-      background:#ffffff;
-      border-radius:12px;
-      border:1px solid #e5e7eb;
-      box-shadow:0 4px 10px rgba(0,0,0,0.03);
-    "
-  >
-    <!-- 위: 프로필 이미지 + 이름 한 줄 -->
-    <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
-      <img src="images/profile_img.png"
-           alt="안드로이드 개발자 방창배 프로필 이미지"
-           style="width:72px; height:72px; border-radius:50%; object-fit:cover;">
-      <h1 style="margin:0;">Android & Mobile Developer</h1>
+
+<style>
+  .portfolio-container {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+    line-height: 1.7;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    word-break: keep-all;
+  }
+
+  /* 프로필 섹션 */
+  .profile-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    margin-bottom: 50px;
+  }
+
+  .profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f8f9fa;
+  }
+
+  /* 공통 타이틀 */
+  h2 {
+    font-size: 1.6rem;
+    color: #007aff;
+    border-bottom: 2px solid #007aff;
+    padding-bottom: 8px;
+    margin-top: 50px;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #111;
+  }
+
+  /* 프로젝트/경력 박스 */
+  .content-box {
+    background: #fdfdfd;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #efefef;
+  }
+
+  .video-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+  }
+
+  .video-tag {
+    display: inline-block;
+    padding: 6px 14px;
+    background: #ff0000;
+    color: #fff !important;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  /* 기술 스택 그리드 */
+  .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .skill-item strong {
+    display: block;
+    color: #007aff;
+    margin-bottom: 5px;
+  }
+
+  /* 모바일 대응 */
+  @media (max-width: 640px) {
+    .profile-card {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+    .profile-info { text-align: left; }
+    h1 { font-size: 1.5rem; }
+  }
+</style>
+
+<div class="portfolio-container">
+
+  <div class="profile-card">
+    <img src="images/profile_img.png" alt="방창배 프로필" class="profile-img">
+    <div class="profile-info">
+      <h1 style="margin:0 0 10px 0;">Android & Mobile Developer</h1>
+      <p style="margin:0 0 15px 0; font-size:1.05rem; color:#555;">
+        약 7년간 안드로이드 앱을 개발해 왔으며,<br>
+        최근 3년은 <strong>시각장애인 보조기기 및 공공 R&D 과제</strong>에 집중하고 있습니다.
+      </p>
+      <div style="font-size: 0.95rem; line-height: 1.8;">
+        <strong>이름</strong>: 방창배 (1991.10.27)<br>
+        <strong>Email</strong>: <a href="mailto:lonmell0213@gmail.com">lonmell0213@gmail.com</a><br>
+        <strong>GitHub</strong>: <a href="https://github.com/lonmell" target="_blank">깃허브 링크</a>
+      </div>
     </div>
-    <!-- 아래: 소개 문장 + 연락처 -->
-    <p style="margin:0 0 8px 0; font-size:0.95rem;">
-      약 7년간 안드로이드 앱을 개발해 왔으며,<br>
-      이 중 최근 3년은 시각장애인 보조기기·모바일 서비스와 공공 R&amp;D 과제에 집중하고 있습니다.
-    </p>
-    <p style="margin:0; font-size:0.95rem;">
-      <strong>이   름</strong>:방창배<br>
-      <strong>생년월일</strong>:1991.10.27<br>
-      <strong>이 메 일</strong>:
-      <a href="mailto:lonmell0213@gmail.com">lonmell0213@gmail.com</a><br>
-      <strong>GitHub</strong>:
-      <a href="https://github.com/lonmell" target="_blank" rel="noopener noreferrer">
-        깃 허브 링크
-      </a>
-    </p>
   </div>
+
+  <h2>소개</h2>
+  <div class="content-box">
+    <p>단순히 기능을 만드는 것을 넘어, 실제 사용자 환경에서의 <strong>접근성(Accessibility)</strong>을 가장 중요하게 생각합니다. 「약자를 위한 기술개발 지원사업」을 통해 시각장애인 실내 이동 서비스를 상용화했으며, 공공 R&D의 까다로운 품질 기준(TTA, GS인증 등)을 충족하는 안정적인 개발을 지향합니다.</p>
+  </div>
+
+  <h2>기술 스택</h2>
+  <div class="content-box skill-grid">
+    <div class="skill-item">
+      <strong>Language</strong>
+      Java(Main), Kotlin, Dart(Flutter), PHP
+    </div>
+    <div class="skill-item">
+      <strong>Mobile Framework</strong>
+      Android Native (Camera2, View, Service), BLE/iBeacon 연동, Retrofit, FCM, TTS, 음성인식
+    </div>
+    <div class="skill-item">
+      <strong>Database & Tools</strong>
+      MySQL, MariaDB, Git/GitHub, Notion, Jira
+    </div>
+    <div class="skill-item">
+      <strong>Certification / R&D</strong>
+      TTA 성능평가, GS인증, ISO9001 대응 역량
+    </div>
+  </div>
+
+  <h2>대표 프로젝트</h2>
+  
+  <div class="content-box">
+    <h3>1. HatioEye – 시각장애인 보조·실내 내비게이션</h3>
+    <p style="color:#666; margin-bottom:10px;">2023.05 ~ 재직 중 | 안드로이드 핵심 개발</p>
+    
+    <div class="video-group">
+      <a href="https://youtu.be/RvpdKi8TPu4" class="video-tag" target="_blank">KBS 뉴스 보도</a>
+      <a href="https://youtu.be/JWexY0MNggE" class="video-tag" target="_blank">인천공항 시연</a>
+      <a href="https://youtu.be/h5G9FrHZ0Tc" class="video-tag" target="_blank">국정감사 시연</a>
+      <a href="https://www.youtube.com/watch?v=86Rvdg7s8Kc" class="video-tag" target="_blank">복지전시회 참여</a>
+    </div>
+
+    <p><strong>주요 업무:</strong></p>
+    <ul>
+      <li>안드로이드 앱 전체 구조 설계 및 핵심 기능(Camera2, BLE 측위) 개발</li>
+      <li>시각장애인 전용 제스처 메뉴 및 음성 인터랙션 설계</li>
+      <li><strong>기술 문서화:</strong> 하드웨어 연동 규격서(SA) 및 프로젝트 가이드(README) 체계적 관리</li>
+    </ul>
+    <p><strong>주요 성과:</strong> 서울특별시장 표창 수상, 조달청 혁신제품 등록, CES 2025 출품 지원</p>
+  </div>
+
+  <div class="content-box">
+    <h3>2. 모바일 작업현황 보고 시스템</h3>
+    <p style="color:#666; margin-bottom:10px;">2022 | 단독 개발</p>
+    <ul>
+      <li>공기업 현장 업무 디지털 전환을 위한 안드로이드 앱 설계 및 개발</li>
+      <li>대구경북 스타트업 페스티벌 <strong>공기업 대학생 부문 수상</strong> (한국가스공사)</li>
+    </ul>
+  </div>
+
+  <h2>R&D · 공공 사업 참여 이력</h2>
+  <div class="content-box">
+    <ul style="font-size: 0.95rem; padding-left: 20px;">
+      <li>2024 인천공항 신기술 테스트베드 공모전 선정</li>
+      <li>2024 디지털인프라(SW) 종합 진단 및 개선 사업 (TTA/NIPA) 대응</li>
+      <li>2024 경상북도 4차산업혁명 핵심기술개발 (비대면 시험 감독 시스템)</li>
+      <li>2024 양자기술개발 지원사업 기획 참여</li>
+      <li>2023 약자를 위한 기술개발 지원사업 (서울시)</li>
+      <li>스마트라이프위크, 월드IT쇼 등 주요 박람회 기술 시연 및 지원</li>
+    </ul>
+  </div>
+
 </div>
----
-
-## 현재 하고 있는 일
-
-- ㈜하가 · 안드로이드 개발자 (2023.05 ~ 재직 중)
-- 시각장애인 보조기기 **HatioEye / HatioEye PH** 안드로이드 앱 개발 및 유지보수
-- 카메라 텍스트/사물 인식, 실내 내비게이션, 음성 안내·음성 명령 등 핵심 기능 설계·구현
-- 서버(API) 및 DB 연동, 성능·안정성 개선, 사용자 피드백 기반 기능 개선
-- R&D 과제 결과물(보고서·시연 앱) 및 각종 인증·평가(TTA, GS 등)를 위한 기술 대응
-
----
-
-## 관심 분야 & 앞으로 하고 싶은 일
-
-- 시각장애인·고령자 등 **약자를 위한 모바일 보조 기술(Assistive Tech)**
-- 안드로이드 기반 **카메라/비전 인식**, 실내 내비게이션, 센서 융합 기술
-- 모바일 앱의 **접근성(Accessibility)** 향상 및 UX 개선
-- 공공·교육 분야 서비스에서의 품질/안정성 확보, 대규모 사용자 환경에서의 운영
-- 향후에는 안드로이드 기반 보조기기 서비스 고도화와,
-- Flutter 등 크로스플랫폼을 활용한 멀티 플랫폼 지원에도 관심이 있습니다.
-
----
-## 소개
-
-초기에는 일반 기업용·교육용 모바일 서비스를 중심으로 안드로이드 앱을 개발했고,
-최근 3년간은 시각장애인 보조기기와 교육·평가 솔루션을 중심으로
-안드로이드 기반 모바일 서비스를 설계하고 개발해 왔습니다.
-단순히 화면과 기능을 만드는 것을 넘어, 실제 사용자 환경에서 안정적으로 동작하는지와
-시각장애인을 포함한 사용자가 얼마나 쓰기 쉬운지(접근성)를 중요하게 생각합니다.
-
-특히 「약자를 위한 기술개발 지원사업」을 통해  
-시각장애인의 의사소통 및 실내 이동을 지원하는 서비스를 상용화하는 데 참여했고,  
-이 경험을 바탕으로, 사회적 약자를 돕는 기술과 공공 R&D 과제에서 요구하는 품질 기준(TTA, GS인증 등)을 함께 고려하는 개발을 지향하고 있습니다.
-
----
-
-## 기술 스택
-
-### Language
-- Java (Android)
-- Kotlin (기초/경험)
-- Dart (Flutter 경험)
-- PHP (간단한 API 개발)
-
-### Mobile / Framework
-- Android Native (Camera2, View, Service 등)
-- BLE / iBeacon 연동
-- Retrofit 기반 REST API 연동
-- FCM(Push), TTS, SpeechRecognizer(음성 인식)
-- Flutter (기본 화면 및 간단 앱 개발 경험)
-
-### 기타
-- Git / GitHub
-- MySQL / MariaDB 연동
-- Notion / Jira 등 협업 도구
-
----
-
-## 경력 요약
-
-- 총 7년 안드로이드 개발 경력
-  (일반 모바일 서비스·업무 시스템 개발 4년 + 시각장애인 보조기기·교육/평가 솔루션 개발 3년)
-- 「약자를 위한 기술개발 지원사업」, 디지털 인프라(SW) 종합 진단·개선,  
-  4차산업혁명 핵심기술개발, 양자기술개발(기획) 등 **공공 R&D 과제**에 핵심 개발자로 참여
-- TTA 성능평가, GS인증, ISO9001, Inno-Biz 등 **품질·인증 대응 경험**
-- 시각장애인 보조기기 **하티오아이 PH 출시·조달등록**, **CES 2025 출품** 등 제품·서비스 상용화 과정에 기술 기여
-- 2024 인천공항 신기술 테스트베드 공모전 선정 
-
----
-
-## 대표 프로젝트
-
-### 1. HatioEye – 시각장애인 보조·실내 내비게이션 앱
-
-- 기간: 2023.05 ~ 진행 중  
-- 역할: 안드로이드 앱 개발 / 핵심 기능 설계  
-- 기술스택: Android(Java), Camera2, BLE/iBeacon, Retrofit, FCM, TTS, 음성 인식 등
-
-**프로젝트 개요**
-
-시각장애인이 실내에서 안전하게 이동하고, 주변 텍스트와 사물 정보를 음성으로 안내받을 수 있도록 돕는  
-보조기기 및 안드로이드 앱입니다. 웨어러블 디바이스와 스마트폰을 연동해  
-실내 내비게이션, 문자 인식, 사물/환경 인식 기능을 제공합니다.
-
-**주요 담당 업무**
-
-- 안드로이드 앱 전체 구조 설계 및 핵심 화면/기능 개발
-- BLE / iBeacon 기반 **실내 내비게이션 로직** 및 TTS 음성 안내 기능 구현
-- Camera2 기반 카메라 프리뷰·촬영 및 서버 업로드, 인식 결과 수신·안내 흐름 구현
-- 시각장애인을 고려한 **제스처 기반 메뉴**, 음성 안내·음성 명령 인터랙션 설계
-- 네트워크/센서 상태 등 예외 상황을 고려한 안정성 개선 및 오류 처리
-
-**관련 사업 / 성과**
-
-- 2023 **약자를 위한 기술개발 지원사업** – 시각장애인 의사소통·실내이동지원 스마트 서비스 상용화
-- 약자를 위한 기술개발 지원사업 우수성과로 **서울특별시장 표창** 수상(약자동행 가치 확산 기여)
-- 2024 **디지털인프라(SW) 종합 진단 및 개선 사업(TTA/NIPA)** 대상 서비스  
-- SW품질·소스코드·DBMS·구축체계 진단 대응 및 개선 사항 반영
-- 시각장애인 보조기기 **하티오아이 PH** 조달 등록 및 KC·SAR 인증 과정 기술 지원
-- 인천공항 신기술 테스트베드 공모전 선정, **CES 2025 HATIO EYE 출품** 등 박람회·전시 기술 지원 [인천공항 길안내 하티오아이 소개 "승우버디님"](https://youtu.be/JWexY0MNggE?si=8fLCk-vQnwx_RJUL)
-- 2024 Reha Home 홈케어·재활·복지전시회 참여 영상 [유튜브 이동](https://www.youtube.com/watch?v=86Rvdg7s8Kc)
-- 발표·영상링크 [KBS News 현장영상](https://youtu.be/RvpdKi8TPu4?si=qgLoRuyf_HUR7gGO) / [2024 국정감사 신기술 보조기기](youtube.com/watch?v=h5G9FrHZ0Tc&si=_b1La8t1Rl9VwRlD)
-
----
-
-### 2. 모바일 작업현황 보고 시스템
-
-- 기간: 2022  
-- 역할: 안드로이드 앱 단독 개발  
-
-**프로젝트 개요**
-
-공기업 현장의 작업·안전 관련 정보를 하루 전 수기/엑셀로 취합하던 방식을 개선하기 위해,  
-스마트폰에서 작업 현황을 간편히 등록·조회할 수 있도록 만든 안드로이드 앱입니다.
-
-**주요 담당 업무**
-
-- 요구사항을 바탕으로 전체 화면 구조 및 데이터 흐름 설계
-- 작업 일정, 작업 유형(위험 공종 등) 입력·조회 화면 및 리스트 UI 구현
-- REST API 연동을 가정한 작업 데이터 전송·조회 로직 설계
-- 현장 사용성을 고려한 간단한 입력 UX, **필수 정보 중심 화면 구성**
-
-**성과**
-
-- **대구경북 스타트업 페스티벌 공기업 대학생 부문 수상**(한국가스공사)
-- 실제 현장 업무 흐름을 고려한 기능 설계·개선 경험 확보
-
----
-
-## R&D · 공공 사업 참여 (발췌)
-
-- 2023 약자를 위한 기술개발 지원사업 –  
-  시각장애인 의사소통·실내이동지원 스마트 서비스 상용화(WW230076)
-- 2023 사회적경제기업 성장집중 지원사업
-- 2024 디지털인프라(SW) 종합 진단 및 개선 사업(정보통신산업진흥원, TTA/NIPA)
-- 2024 경상북도 4차산업혁명 핵심기술개발사업 – 온라인 비대면 시험 감독 시스템 개발 참여
-- 2024 양자기술개발 지원사업(기획지원) – 양자센싱 기반 시각장애인 웨어러블 디바이스 개발 기획 참여
-- 2024 인천공항 신기술 테스트베드 공모전’ 선정
-- 2025 첨단 기능성 소재 기반 시기능 보조기기 산업 육성
-- 2025 공공 혁신 디바이스 실증 지원 사업
-- 스마트라이프위크, 디지털미디어테크쇼, 월드IT쇼, CES 2025 등 전시·박람회 데모 및 기술 지원
-
