@@ -39,7 +39,6 @@ title: 안드로이드 개발자 방창배 포트폴리오
   h2 {
     font-size: 1.6rem;
     color: #007aff;
-    border-bottom: 2px solid #007aff;
     padding-bottom: 8px;
     margin-top: 50px;
   }
